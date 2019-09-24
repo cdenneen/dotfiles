@@ -1,0 +1,144 @@
+#PubkeyAuthentication no
+#StrictHostKeyChecking no
+#ServerAliveInterval 150
+#ServerAliveCountMax 3
+#IdentityFile ~/.ssh/id_rsa
+#PreferredAuthentications=keyboard-interactive,password
+Host windows
+  Hostname ctcgidcdenneen.ap.org
+  User chris
+  #PreferredAuthentications=password
+Host ctcfortress
+  User chris
+Host nycfortress
+  User chris
+Host pftp
+  Hostname ctccentosftp01.ap.org
+  User root
+Host logger
+  Hostname ec2-184-73-75-21.compute-1.amazonaws.com
+  IdentityFile ~/.ssh/logger.pem
+  User ubuntu
+Host icimac
+  Hostname imac.53510353.members.btmm.icloud.com
+  User chris
+Host blink
+  Hostname ssh.blinkenshell.org
+  User nemish
+  Port 2222
+  Protocol 2
+  IdentityFile ~/.ssh/id_rsa
+Host worker01
+  Hostname ctcinteract-worker01.ap.org
+Host app01
+  Hostname ctcinteract-app01.ap.org
+Host test01
+  Hostname ctcinteract-test01.ap.org
+Host db01
+  Hostname ctcinteract-db01.ap.org
+Host web01
+  Hostname ctcinteract-web01.ap.org
+Host web02
+  Hostname ctcinteract-web02.ap.org
+Host db01
+  Hostname ctcinteract-db01.ap.org
+Host admin01
+  Hostname ctcinteract-admin01.ap.org
+Host mongop1
+  Hostname ctceapvhmdbprd1.dmzext.local
+Host mongop2
+  Hostname ctceapvhmdbprd2.dmzext.local
+Host mongop3
+  Hostname ctceapvhmdbprd3.dmzext.local
+Host mongos1
+  Hostname ctceapvhmdbstg1.ap.org
+Host mongos2
+  Hostname ctceapvhmdbstg2.ap.org
+Host mongos3
+  Hostname ctceapvhmdbstg3.ap.org
+Host mongoq1
+  Hostname rndeapvhmdb1.rnd.local
+Host mongoq2
+  Hostname rndeapvhmdb2.rnd.local
+Host mongoq3
+  Hostname rndeapvhmdb3.rnd.local
+Host rndeslogs1
+  Hostname 10.1.165.125
+Host rndlogstash1
+  Hostname 10.1.165.126
+Host gitlab
+  Hostname git.ap.org
+  User cdenneen
+  IdentityFile ~/.ssh/id_rsa
+  IdentitiesOnly yes
+Host gitolite
+  Hostname linuxmgr.ap.org
+  User cdenneen
+  IdentityFile ~/.ssh/gitolite
+  IdentitiesOnly yes
+Host apdnp.beanstalkapp.com
+  IdentityFile ~/.ssh/id_rsa
+Host redmine
+  Hostname ctcinteract-svn01.ap.org
+  User git
+  IdentityFile ~/.ssh/redmine
+  IdentitiesOnly yes
+Host ctcinteract-svn01.ap.org
+  IdentityFile ~/.ssh/id_rsa
+Host lsindexbacklog
+  User centos
+  Hostname 10.12.10.216
+  IdentityFile ~/MEGAsync/certs/logstash-indexer.pem
+Host datasci01
+  User ubuntu
+  Hostname 10.12.11.95
+  IdentityFile ~/.ssh/interactives-prod-asssociatedpressprod-us-east-1-keypair.pem.cer
+Host automation01
+  User ubuntu
+  Hostname 10.12.10.78
+  IdentityFile ~/.ssh/interactives-prod-asssociatedpressprod-us-east-1-keypair.pem.cer
+Host interactives-web03
+  User ubuntu
+  Hostname 10.12.11.138
+  IdentityFile ~/.ssh/interactives-prod-asssociatedpressprod-us-east-1-keypair.pem.cer
+Host interactives-search01
+  User ubuntu
+  Hostname 10.12.10.15
+  IdentityFile ~/.ssh/interactives-prod-asssociatedpressprod-us-east-1-keypair.pem.cer
+Host interactives-db01-aws
+  User ubuntu
+  Hostname 10.12.12.168
+  IdentityFile ~/.ssh/interactives-prod-asssociatedpressprod-us-east-1-keypair.pem.cer
+Host imac
+  User chris
+  Hostname imac.denneen.net
+  LocalForward 5999 127.0.0.1:5900
+  LocalForward 8000 192.168.20.1:8000
+Host nas
+  User root
+  Hostname imac.denneen.net
+  Port 2222
+  LocalForward 5998 192.168.86.120:5900
+Host pmaster
+  User centos
+  Hostname 10.240.61.87
+  IdentityFile ~/MEGAsync/certs/apcapdev-kubernetes.pem
+Host pdb
+  User centos
+  Hostname 10.240.61.38
+  IdentityFile ~/MEGAsync/certs/apcapdev-kubernetes.pem
+Host pconsole
+  User centos
+  Hostname 10.240.61.170
+  IdentityFile ~/MEGAsync/certs/apcapdev-kubernetes.pem
+Host pagent
+  User centos
+  Hostname 10.240.61.14
+  IdentityFile ~/MEGAsync/certs/apcapdev-kubernetes.pem
+
+Host *
+  User root
+  ServerAliveInterval 60
+
+#  RemoteForward 52698 127.0.0.1:52698
+#  IdentityFile ~/.ssh/fortress.rsa
