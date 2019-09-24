@@ -8,6 +8,9 @@ tap "homebrew/core"
 tap "homebrew/services"
 #tap "homebrew/test-bot"
 
+# Installs java which is pre-requisite for some below applications
+cask "corretto8"
+
 brew "ack" # Search tool like grep, but optimized for programmers
 # brew "automake"
 brew "awscli"
@@ -15,7 +18,6 @@ brew "bfg" # Remove large files or passwords from Git history like git-filter-br
 brew "binutils" # GNU binary tools for native development
 brew "cmake" # cross platform make
 brew "coreutils" # GNU File, Shell, and Text utilities
-brew "corretto8"
 brew "curl"
 brew "docker"
 #brew "docker-machine"
