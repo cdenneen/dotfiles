@@ -60,7 +60,7 @@ brew "reattach-to-user-namespace" # Reattach process (e.g., tmux) to background
 # brew "redis", restart_service: true
 brew "ripgrep" # Search tool like grep and The Silver Searcher
 brew "ruby"
-brew "ruby@2.3"
+brew "ruby@2.1"
 brew "ruby@2.4"
 brew "ruby@2.5"
 brew "pinentry-mac"
