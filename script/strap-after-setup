@@ -6,6 +6,19 @@ cd $(dirname $0)/..
 script/extract-secrets
 script/install-vscode-extensions
 
+# Disable Gatekeeper
+sudo spctl --master-disable
+
+defaults write com.apple.dock tilesize -integer 24
+defaults write com.apple.dock pinning -string end
+defaults write com.apple.dock orientation -string bottom
+
+# Show remaining battery time; hide percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+defaults write com.apple.menuextra.battery ShowTime -string "YES"
+
+
+
 if [ "$SHELL" != "/bin/zsh" ]
 then
   chsh -s /bin/zsh cdenneen
