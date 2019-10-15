@@ -1,0 +1,7 @@
+[user]
+  name = Chris Denneen
+  email = cdenneen@ap.org
+  signingkey = 3834814930B83A30
+
+[commit]
+  gpgsign = true

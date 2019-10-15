@@ -1,0 +1,22 @@
+[hub]
+  protocol = https
+
+[user]
+  name = Chris Denneen
+  email = cdenneen@gmail.com
+  signingkey = BFEB75D960DFAA6B
+
+[commit]
+  gpgsign = true
+
+[gpg]
+  program = /usr/local/bin/gpg
+
+#[push]
+#  default = simple
+
+[credential]
+  helper = osxkeychain
+
+[includeIf "gitdir:~/src/gitlab/"]
+  path = ~/.gitconfig.work
