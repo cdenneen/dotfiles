@@ -8,6 +8,7 @@ tap "homebrew/core"
 tap "homebrew/services"
 #tap "homebrew/test-bot"
 tap "puppetlabs/puppet"
+tap "weaveworks/tap"
 
 # Installs java which is pre-requisite for some below applications
 cask "corretto8"
@@ -50,7 +51,7 @@ brew "mas"
 # brew "mysql@5.7", restart_service: true
 # brew "nmap"
 # brew "nginx", restart_service: true
-# brew "node"
+brew "node"
 # brew "nss"
 # brew "protobuf"
 # brew "rakudo-star"
@@ -75,6 +76,7 @@ brew "the_silver_searcher"
 brew "tmux"
 # brew "vim", args: ["with-lua"]
 brew "watch"
+brew "weaveworks/tap/eksctl"
 # brew "wget"
 brew "xz"
 # brew "yaml-cpp" # C++ YAML parser and emitter for YAML 1.2 spec
