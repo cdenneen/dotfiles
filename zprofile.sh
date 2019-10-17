@@ -47,6 +47,15 @@ svn_branch() {
   echo "(${SVN_BRANCH#branches/}) "
 }
 
+ap() {
+  export AWS_PROFILE=$1
+}
+
+azlogin() {
+  ap $1
+  aws-azure-login --profile=$1
+}
+
 if [ "$USER" = "root" ]
 then
   export PROMPT='%{$fg_bold[magenta]%}%m %{$fg_bold[blue]%}# %b%f'
