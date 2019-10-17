@@ -1,0 +1,58 @@
+[default]
+output=json
+region=us-east-1
+
+[profile devsso]
+azure_tenant_id=e442e1ab-fd6b-4ba3-abf3-b020eb50df37
+azure_app_id_uri=http://aws6BF99704DC064015B4728AE8D2EE7AD5
+azure_default_username=cdenneen@ap.org
+azure_default_role_arn=arn:aws:iam::222259241209:role/APCapDev_SysAdmin_Role
+azure_default_duration_hours=8
+
+[profile capdevr]
+azure_tenant_id=e442e1ab-fd6b-4ba3-abf3-b020eb50df37
+azure_app_id_uri=http://aws6BF99704DC064015B4728AE8D2EE7AD5
+azure_default_username=cdenneen@ap.org
+azure_default_role_arn=arn:aws:iam::222259241209:role/APCapDev_Root_Role
+azure_default_duration_hours=8
+region=us-east-1
+
+[profile capdev]
+azure_tenant_id=e442e1ab-fd6b-4ba3-abf3-b020eb50df37
+azure_app_id_uri=http://aws6BF99704DC064015B4728AE8D2EE7AD5
+azure_default_username=cdenneen@ap.org
+azure_default_role_arn=arn:aws:iam::222259241209:role/APCapDev_SysAdmin_Role
+azure_default_duration_hours=8
+region=us-east-1
+
+[profile awsqa]
+azure_tenant_id=e442e1ab-fd6b-4ba3-abf3-b020eb50df37
+azure_app_id_uri=http://aws6BF99704DC064015B4728AE8D2EE7AD5
+azure_default_username=cdenneen@ap.org
+azure_default_role_arn=arn:aws:iam::720322524327:role/APQA_SysAdmin_Role
+azure_default_duration_hours=8
+region=us-east-1
+
+[profile awsqar]
+azure_tenant_id=e442e1ab-fd6b-4ba3-abf3-b020eb50df37
+azure_app_id_uri=http://aws6BF99704DC064015B4728AE8D2EE7AD5
+azure_default_username=cdenneen@ap.org
+azure_default_role_arn=arn:aws:iam::720322524327:role/APQA_Root_Role
+azure_default_duration_hours=8
+region=us-east-1
+
+[profile awsprod]
+azure_tenant_id=e442e1ab-fd6b-4ba3-abf3-b020eb50df37
+azure_app_id_uri=http://aws6BF99704DC064015B4728AE8D2EE7AD5
+azure_default_username=cdenneen@ap.org
+azure_default_role_arn=arn:aws:iam::198401342403:role/APProd_SysAdmin_Role
+azure_default_duration_hours=8
+region=us-east-1
+
+[profile apss]
+azure_tenant_id=e442e1ab-fd6b-4ba3-abf3-b020eb50df37
+azure_app_id_uri=http://aws6BF99704DC064015B4728AE8D2EE7AD5
+azure_default_username=cdenneen@ap.org
+azure_default_role_arn=arn:aws:iam::838870929816:role/APSS_Root_Role
+azure_default_duration_hours=8
+region=us-east-1
