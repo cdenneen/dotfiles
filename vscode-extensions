@@ -6,6 +6,7 @@ rebornix.ruby
 CraigMaslowski.erb
 DanielThielking.aws-cloudformation-yaml
 jpogran.puppet-vscode
-redha.vscode-yaml
+redhat.vscode-yaml
 secanis.jenkinsfile-support
 ms-kubernetes-tools.vscode-kubernetes-tools
+ms-azuretools.vscode-docker
