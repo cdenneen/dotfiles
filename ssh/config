@@ -135,6 +135,9 @@ Host pagent
   User centos
   Hostname 10.240.61.14
   IdentityFile ~/MEGAsync/certs/apcapdev-kubernetes.pem
+Host synology
+  User admin
+  Hostname 192.168.86.30
 
 Host *
   User root
