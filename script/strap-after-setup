@@ -63,7 +63,13 @@ echo "Require password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
 defaults write com.apple.screensaver askForPasswordDelay -int 0
 
-npm install -g aws-azure-login
+dockutil --remove 'News' >/dev/null
+dockutil --remove 'Maps' >/dev/null
+
+if ! command -v aws-azure-login >/dev/null
+then
+  npm install -g aws-azure-login
+fi
 
 if [ "$SHELL" != "/bin/zsh" ]
 then
