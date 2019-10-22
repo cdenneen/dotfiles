@@ -23,7 +23,7 @@ brew "coreutils" # GNU File, Shell, and Text utilities
 brew "curl"
 brew "docker"
 #brew "docker-machine"
-brew "elasticsearch@6.8", restart_service: true
+brew "elasticsearch@6.8", start_service: false
 brew "exa"
 brew "fd"
 brew "fork-cleaner"
@@ -97,6 +97,7 @@ cask "amazon-chime"
 cask "amazon-photos"
 # cask "atom"
 # cask "caffeine"
+cask "calibre"
 # cask "clipy"
 # cask "crashplan"
 cask "cyberduck"
@@ -159,14 +160,18 @@ mas "GIPHY Capture", id: 668208984
 mas "Grids", id: 963509558
 # mas "iMovie", id: 408981434
 # mas "Keynote", id: 409183694
+mas "Kindle", id: 405399194
+mas "LastPass", id: 926036361
 mas "Mactracker", id: 430255202
 # mas "MemoryKeeper", id: 689992800
+mas "Memory Diag", id: 748212890
 mas "Microsoft Remote Desktop", id: 1295203466
 # mas "Numbers", id: 409203825
 mas "NordVPN", id: 1116599239
 mas "OneDrive", id: 823766827
 # mas "Pages", id: 409201541
 # mas "Pixelmator Pro", id: 1289583905
+mas "Random Password Generator", id: 1468584562
 # mas "Remote Desktop", id: 409907375
 mas "Skitch", id: 425955336
 mas "Slack", id: 803453959
