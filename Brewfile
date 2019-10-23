@@ -39,6 +39,8 @@ brew "hub"
 # brew "jemalloc"
 brew "jq"
 brew "kubernetes-cli", link: false
+brew "kube-ps1"
+brew "kubectx"
 # brew "kops"
 brew "kubernetes-helm"
 brew "launch_socket_server", restart_service: true
