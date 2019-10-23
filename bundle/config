@@ -1,5 +1,6 @@
 ---
-BUNDLE_PATH: "vendor/ruby" # ".bundle"
+#BUNDLE_PATH: ".bundle"
+BUNDLE_PATH: "vendor/ruby"
 BUNDLE_AUTO_INSTALL: "1"
 BUNDLE_DISABLE_SHARED_GEMS: "true"
 BUNDLE_ONLY_UPDATE_TO_NEWER_VERSIONS: "true"
@@ -13,3 +14,4 @@ BUNDLE_GEM__MIT: "false"
 BUNDLE_GEM__COC: "false"
 #BUNDLE_SPECIFIC_PLATFORM: "true"
 BUNDLE_CONSOLE: "pry"
+BUNDLE_JOBS: "11"
