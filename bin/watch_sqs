@@ -1,0 +1,53 @@
+ENV=$1
+if [ -z "$ENV" ]; then
+  ENV=all
+fi
+  if [ "$ENV" == 'prod' ] || [ "$ENV" == 'all' ]; then
+  echo "PROD"
+  echo "input queue";
+  aws --profile awsprod sqs get-queue-attributes \
+  --queue-url https://queue.amazonaws.com/198401342403/logstash-prod-associatedpressprod-us-east-1-logstashinputqueue \
+  --attribute-names ApproximateNumberOfMessages ApproximateNumberOfMessagesNotVisible | jq '.[]';
+  echo "priority broker queue";
+  aws --profile awsprod sqs get-queue-attributes \
+  --queue-url https://queue.amazonaws.com/198401342403/logstash-prod-associatedpressprod-us-east-1-logstashprioritybrokerqueue \
+  --attribute-names ApproximateNumberOfMessages ApproximateNumberOfMessagesNotVisible | jq '.[]';
+  echo "broker queue";
+  aws --profile awsprod sqs get-queue-attributes \
+  --queue-url https://queue.amazonaws.com/198401342403/logstash-prod-associatedpressprod-us-east-1-logstashbrokerqueue \
+  --attribute-names ApproximateNumberOfMessages ApproximateNumberOfMessagesNotVisible | jq '.[]';
+  echo "webfeeds queue";
+  aws --profile awsprod sqs get-queue-attributes \
+  --queue-url https://queue.amazonaws.com/198401342403/logstash-prod-associatedpressprod-us-east-1-logstashwebfeedsqueue \
+  --attribute-names ApproximateNumberOfMessages ApproximateNumberOfMessagesNotVisible | jq '.[]';
+  echo "backup queue";
+  aws --profile awsprod sqs get-queue-attributes \
+  --queue-url https://queue.amazonaws.com/198401342403/logstash-prod-associatedpressprod-us-east-1-backup-queue \
+  --attribute-names ApproximateNumberOfMessages ApproximateNumberOfMessagesNotVisible | jq '.[]';
+  echo "****"
+  fi
+  if [ "$ENV" == 'qa' ] || [ "$ENV" == 'all' ]; then
+  echo "QA"
+  echo "input queue";
+  aws --profile awsqa sqs get-queue-attributes \
+  --queue-url https://sqs.us-east-1.amazonaws.com/720322524327/logstash-qa-associatedpressqa-us-east-1-logstashinputqueue \
+  --attribute-names ApproximateNumberOfMessages ApproximateNumberOfMessagesNotVisible | jq '.[]';
+  echo "broker queue";
+  aws --profile awsqa sqs get-queue-attributes \
+  --queue-url https://sqs.us-east-1.amazonaws.com/720322524327/logstash-qa-associatedpressqa-us-east-1-logstashbrokerqueue \
+  --attribute-names ApproximateNumberOfMessages ApproximateNumberOfMessagesNotVisible | jq '.[]';
+  echo "****"
+  fi
+  if [ "$ENV" == 'dev' ] || [ "$ENV" == 'all' ]; then
+  echo "DEVCAP"
+  echo "input queue";
+  aws --profile capdev sqs get-queue-attributes \
+  --queue-url https://sqs.us-east-1.amazonaws.com/222259241209/logstash-dev-apcapdevelopment-us-east-1-logstashinputqueue \
+  --attribute-names ApproximateNumberOfMessages ApproximateNumberOfMessagesNotVisible | jq '.[]';
+#  echo "****"
+#  echo "Proteus"
+#  echo "input queue";
+#  aws --profile proteus sqs get-queue-attributes \
+#  --queue-url https://sqs.us-east-1.amazonaws.com/557187967306/kibana-int-ctc-LogQueue \
+#  --attribute-names ApproximateNumberOfMessages ApproximateNumberOfMessagesNotVisible | jq '.[]';
+  fi
