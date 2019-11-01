@@ -1,0 +1,2 @@
+  /usr/libexec/PlistBuddy -c "Add :'Custom Color Presets':'IR Black' dict" ~/Library/Preferences/com.googlecode.iterm2.plist
+  /usr/libexec/PlistBuddy -c "Merge 'IR_Black.itermcolors' :'Custom Color Presets':'IR Black'" ~/Library/Preferences/com.googlecode.iterm2.plist

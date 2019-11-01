@@ -199,7 +199,7 @@ cd() {
   builtin cd "$@" || return
   [ "$TERMINALAPP" ] && command -v set_terminal_app_pwd >/dev/null \
     && set_terminal_app_pwd
-  pwd > "$HOME/.lastpwd"
+  pwd >! "$HOME/.lastpwd"
   ls
 }
 

@@ -1,0 +1,5 @@
+Bundle "andrewstuart/vim-kubernetes"
+Bundle "m-kat/aws-vim"
+Bundle "elzr/vim-json"
+Bundle "jiangmiao/auto-pairs"
+Bundle "SirVer/ultisnips"

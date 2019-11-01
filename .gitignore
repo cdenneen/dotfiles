@@ -10,4 +10,4 @@
 /gnupg/*.private.*
 bundle/cache
 secrets
-rbenv/*/
+rbenv/*

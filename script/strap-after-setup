@@ -5,6 +5,7 @@ cd $(dirname $0)/..
 
 script/extract-secrets
 script/install-vscode-extensions
+script/add-itermcolors
 
 # Disable Gatekeeper
 sudo spctl --master-disable

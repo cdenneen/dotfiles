@@ -17,3 +17,6 @@ else
   export PROMPT='%{$fg_bold[green]%}macbook %{$fg_bold[blue]%}# %b%f'
 fi
 export RPROMPT='%{$fg_bold[red]%}$(git_branch)%{$fg_bold[yellow]%}$(svn_branch)%b[%{$fg_bold[blue]%}%~%b%f]'
+
+# Set Prezto prompt to override since using iTerm status bar currently
+prompt off
