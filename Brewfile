@@ -192,5 +192,5 @@ mas "Slack", id: 803453959
 # mas "Winmail DAT File Viewer", id: 1030699881
 # mas "Winmail Reader Lite", id: 998287089
 # mas "Wunderlist", id: 410628904
-mas "Xcode", id: 497799835
+# mas "Xcode", id: 497799835
 
