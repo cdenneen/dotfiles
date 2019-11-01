@@ -25,6 +25,7 @@ brew "curl"
 brew "docker"
 brew "docker-compose"
 #brew "docker-machine"
+brew "dockutil"
 brew "elasticsearch@6.8", start_service: false
 brew "exa"
 brew "fd"
