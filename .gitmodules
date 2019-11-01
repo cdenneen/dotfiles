@@ -1,3 +1,7 @@
 [submodule "zsh.prompts/powerlevel9k"]
 	path = zsh.prompts/powerlevel9k
 	url = https://github.com/bhilburn/powerlevel9k.git
+[submodule "yadr"]
+	path = yadr
+	url = https://github.com/skwp/dotfiles.git
+	branch = master
