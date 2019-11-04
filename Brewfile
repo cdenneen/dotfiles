@@ -114,7 +114,7 @@ cask "dropbox-encore"
 cask "fork"
 # cask "gitter" # https://gitter.im
 cask "google-backup-and-sync"
-# cask "google-chrome"
+cask "google-chrome"
 cask "homebrew/cask-fonts/font-menlo-for-powerline"
 cask "homebrew/cask-fonts/font-meslo-for-powerline"
 cask "homebrew/cask-fonts/font-ubuntu-mono-derivative-powerline"
