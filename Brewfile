@@ -10,12 +10,16 @@ tap "homebrew/services"
 tap "homebrew/cask-fonts"
 tap "puppetlabs/puppet"
 tap "weaveworks/tap"
+tap "git-chglog/git-chglog"
+tap "argoproj/tap"
 
 # Installs java which is pre-requisite for some below applications
 cask "corretto8"
 
 brew "ack" # Search tool like grep, but optimized for programmers
 # brew "automake"
+brew "argoproj/tap/argocd"
+brew "aws-iam-authenticator"
 brew "awscli"
 brew "bfg" # Remove large files or passwords from Git history like git-filter-branch
 brew "binutils" # GNU binary tools for native development
@@ -33,6 +37,7 @@ brew "fork-cleaner"
 brew "fzf" # Command-line fuzzy finder written in Go
 brew "ghi" # Github Issues command line
 brew "git"
+brew "git-chglog"
 brew "go"
 brew "gnupg"
 brew "grc" # Colorize logfiles and command output
@@ -57,6 +62,9 @@ brew "mas"
 # brew "nmap"
 # brew "nginx", restart_service: true
 brew "node"
+brew "node-build"
+brew "node@12"
+brew "nodenv"
 # brew "nss"
 # brew "protobuf"
 # brew "rakudo-star"
@@ -95,7 +103,7 @@ brew "zsh-navigation-tools"
 brew "zsh-syntax-highlighting"
 
 cask "1password-cli"
-# cask "1password"
+cask "1password"
 # cask "adoptopenjdk8"
 cask "appcleaner"
 cask "amazon-chime"
@@ -159,7 +167,8 @@ cask "visual-studio-code"
 cask "zoomus"
 
 # mas "1Blocker", id: 1107421413
-mas "1Password 7", id: 1333542190
+# Disable 1Password from AppStore because of License
+# mas "1Password 7", id: 1333542190
 mas "CopyClip", id: 595191960
 # mas "Dr. Antivirus", id: 1068435535
 # mas "DrCleaner", id: 921458519
@@ -172,7 +181,7 @@ mas "Grids", id: 963509558
 # mas "Keynote", id: 409183694
 mas "Kindle", id: 405399194
 mas "LastPass", id: 926036361
-mas "Mactracker", id: 430255202
+# mas "Mactracker", id: 430255202
 # mas "MemoryKeeper", id: 689992800
 mas "Memory Diag", id: 748212890
 mas "Microsoft Remote Desktop", id: 1295203466
