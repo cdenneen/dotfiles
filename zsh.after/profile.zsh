@@ -59,3 +59,5 @@ azlogin() {
 kc (){
   export KUBECONFIG=/Users/cdenneen/.kube/eksctl/clusters/$1
 }
+
+compdef "_files -W ~/.kube/eksctl/clusters/" kc

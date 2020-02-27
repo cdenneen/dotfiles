@@ -1,4 +1,4 @@
-PATH="/Users/cdenneen/bin${PATH+:}${PATH}"; export PATH;
+PATH="/Users/cdenneen/.bin${PATH+:}${PATH}"; export PATH;
 
 typeset -U path cdpath fpath
 
