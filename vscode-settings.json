@@ -32,7 +32,7 @@
     "editor.tabSize": 2,
     "editor.tabCompletion": "on",
     "workbench.editor.tabCloseButton": "left",
-    "workbench.colorTheme": "macOS Classic",
+    "workbench.colorTheme": "Monokai",
     "workbench.iconTheme": "macos-classic-icons",
     "workbench.startupEditor": "none",
     "workbench.editor.enablePreviewFromQuickOpen": false,
@@ -54,7 +54,7 @@
     "search.smartCase": true,
     "debug.inlineValues": true,
     "breadcrumbs.enabled": true,
-    "git.promptToSaveFilesBeforeCommit": true,
+    "git.promptToSaveFilesBeforeCommit": "always",
     "ruby.useLanguageServer": true,
     "ruby.lint": {
         "rubocop": true
