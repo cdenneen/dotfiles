@@ -89,6 +89,10 @@ Host lsindexbacklog
   User centos
   Hostname 10.12.10.216
   IdentityFile ~/MEGAsync/certs/logstash-indexer.pem
+Host lsindexer
+  User centos
+  Host 10.208.73.65
+  IdentifyFile ~/.certs/logstash-indexer.pem
 Host datasci01
   User ubuntu
   Hostname 10.12.11.95
