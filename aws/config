@@ -56,3 +56,10 @@ azure_default_username=cdenneen@ap.org
 azure_default_role_arn=arn:aws:iam::838870929816:role/APSS_Root_Role
 azure_default_duration_hours=8
 region=us-east-1
+
+[profile datawrapper]
+region=us-east-1
+
+[profile assumerole]
+role_arn = arn:aws:iam::198401342403:role/ap-awstam-role
+source_profile = capdevr
